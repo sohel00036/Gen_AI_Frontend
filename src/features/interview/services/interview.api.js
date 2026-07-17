@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://gen-ai-backend-z998.onrender.com",
-    withCredentials: true,
-})
+  baseURL: import.meta.env.VITE_API_URL,
+  withCredentials: true,
+});
 
 
 /**
